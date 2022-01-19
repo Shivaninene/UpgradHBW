@@ -1,0 +1,34 @@
+body{
+    width: 100%;
+    height: 100%; 
+    margin: 0px;
+    background-color: #e0e0e0;
+}
+#detailcontainer{
+    width: 100%;
+    height: 100%;
+}
+#header
+{
+    background-color: rosybrown;
+}
+#footer{
+    background-color: rosybrown;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+}
+#styledetail{
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+#cityimg{
+    width: 500px;
+    height: 500px;
+}
+#socialimg{
+    width: 22px;
+    height: 20px;
+}
