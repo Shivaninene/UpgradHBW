@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Detail</title>
+        <link rel="stylesheet" href="styles/detail.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="detailcontainer">
+        <header id="header">
+            <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" width="150px" height="200px"/></a>
+            <div id="login">
+                <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-target="#myModal" data-backdrop="false">
+                    Login
+                  </button>
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="login">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title" id="login-modal-label">Please Login</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form id="login-form">
+                                <div class="login-field">
+                                    <label for="username">Username: </label>
+                                    <input type="text"id="username"name="username"placeholder="Enter Username"/>
+                                </div>
+                                <div class="login-field">
+                                    <label for="password">Password: </label>
+                                    <input type="password" id="password" name="password"placeholder="Enter Password"/>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </header>
+        <div class="content">
+            <div id="styledetail">
+                <table id="table" border="1">
+                    <th>
+            <img style="margin-left: 20%;"id="cityimg" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/><br/></th>
+            <th>
+            <form style="margin-left: 10%;" action="payment.html">
+                Adults:<input type="number" value="1"/><br><br/><br/>
+                Name:<input type="text" name="name" required/><br/><br/><br/>
+                From Date:<input type="date" name="fromdate" placeholder="dd-mm-yyyy" required/><br/><br/><br/>
+                To Date:<input type="date" name="todate" placeholder="dd-mm-yyyy" required/><br/><br/><br/>
+                Total:<input type="text" name="total" readonly/><br/><br/><br/>
+                <input style="margin-left: 5%;" class="btn btn-outline-success" type="submit" value="Book Now">
+            </form></th>
+            </table>
+            <h2>Radisson Blu Hotel</h2>
+            <div>RATING</div><br/>
+            <div>5 Star</div><br/>
+            <div>AMENITIES</div><br/>
+            <ul type="bullets">
+                <li>Room service</li>
+                <li>Restaurant</li>
+                <li>Business center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul><br/>
+            <h5>DESCRIPTION</h5><br/>
+            <div>This is the Radisson Blu Hotel</div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div style="position: relative;float: left; margin-top: 3%; margin-left: 1%;">
+                <button type="button" class="btn btn-info"data-toggle="modal" data-target="#myModal2" data-backdrop="false">Contact Us</button>
+                    <!-- The Modal -->
+              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="login">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="login-modal-label">Get In Touch</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                       </button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div>Thank you for reaching out!!!</div>
+                    <div>
+                         Please enter your email and we will get back to you.
+                    </div>
+                    <form id="login-form">
+                        <div class="login-field" >
+                            <input type="email" name="email" placeholder="Enter your email" required/>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">submit</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div><br/>
+            <div id="social">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img id="socialimg" src="assests/images/facebook.png" alt="facebook" width="22px" height="22px"/>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img id="socialimg" src="assests/images/instagram.png" alt="instagram" width="22px" height="22px"/>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img id="socialimg" src="assests/images/twitter.png" alt="twitter" width="22px" height="22px"/>
+            </a></div>
+            <br/>
+            <div id="copyright">
+            <div style="margin-left:5% ; margin-top: 3%;color:black; font-family: Ubuntu; font-weight: bold;font-size:19px;">C 2020 Room Search PVT LTD</div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
